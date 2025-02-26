@@ -33,7 +33,7 @@ vn = init_vanna()
 def get_db_path():
     if hasattr(st, "secrets") and "DB_PATH" in st.secrets:
         return st.secrets.DB_PATH
-    return os.path.abspath("../dental.sqlite")
+    return os.path.abspath("./dental.sqlite")
 
 # Connect to database (this will create a new connection in the current thread)
 db_path = get_db_path()
